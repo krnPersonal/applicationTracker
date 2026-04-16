@@ -64,9 +64,7 @@ ApplicationTracker is a full-stack portfolio project for managing job applicatio
 - Dockerized backend and MySQL setup
 
 ## Live Demo
-
-- App: add your deployed frontend URL here
-- API docs: add your deployed Swagger URL here
+App is not online yet.
 
 ## Preview
 <img width="1548" height="1124" alt="image" src="https://github.com/user-attachments/assets/f5738dcd-d19f-43d5-9c3c-6bb39225cddf" />
