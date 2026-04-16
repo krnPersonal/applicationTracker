@@ -69,15 +69,16 @@ ApplicationTracker is a full-stack portfolio project for managing job applicatio
 - API docs: add your deployed Swagger URL here
 
 ## Preview
+<img width="1548" height="1124" alt="image" src="https://github.com/user-attachments/assets/f5738dcd-d19f-43d5-9c3c-6bb39225cddf" />
+<img width="1502" height="1249" alt="image" src="https://github.com/user-attachments/assets/93d18b3d-04c8-4526-8613-f262c540e341" />
+<img width="1604" height="1289" alt="image" src="https://github.com/user-attachments/assets/67b88de9-d066-4fee-9721-8e0b62907c15" />
+<img width="1639" height="1292" alt="image" src="https://github.com/user-attachments/assets/d7aa8222-799d-478d-be31-7371748e0b65" />
+<img width="1432" height="1028" alt="image" src="https://github.com/user-attachments/assets/b010f3ab-8ca7-4e32-822c-649eeef25aca" />
+<img width="1490" height="1288" alt="image" src="https://github.com/user-attachments/assets/d5ab6c4a-fa11-43e2-8db1-1029ef4ac495" />
+<img width="1333" height="1288" alt="image" src="https://github.com/user-attachments/assets/d7317220-7aa1-41dd-ac87-8233abe18c8b" />
+<img width="1342" height="1290" alt="image" src="https://github.com/user-attachments/assets/dc9f6d56-b1ba-4e65-b040-a738a6a8631d" />
 
-Add screenshots to a `screenshots/` folder and replace these placeholders when you are ready:
 
-```md
-![Landing Page](screenshots/landing-page.png)
-![Dashboard](screenshots/dashboard.png)
-![Applications Table](screenshots/applications-table.png)
-![Application Detail](screenshots/application-detail.png)
-```
 
 ## Demo Credentials
 
