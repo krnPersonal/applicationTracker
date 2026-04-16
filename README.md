@@ -1,5 +1,11 @@
 # ApplicationTracker
 
+[![Java](https://img.shields.io/badge/Java-17-1f4acc?style=flat-square)](#tech-stack)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6db33f?style=flat-square)](#tech-stack)
+[![React](https://img.shields.io/badge/React-Vite-61dafb?style=flat-square)](#tech-stack)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-4479a1?style=flat-square)](#tech-stack)
+[![Swagger](https://img.shields.io/badge/API-Swagger-85ea2d?style=flat-square)](#api-docs)
+
 ApplicationTracker is a full-stack portfolio project for managing job applications through a polished, product-style workflow. It combines a React frontend with a Spring Boot backend and focuses on the parts that make a portfolio project feel credible: authentication, analytics, file handling, route protection, migrations, API docs, and a cleaner UX than a basic CRUD app.
 
 ## What It Shows
@@ -61,6 +67,17 @@ ApplicationTracker is a full-stack portfolio project for managing job applicatio
 
 - App: add your deployed frontend URL here
 - API docs: add your deployed Swagger URL here
+
+## Preview
+
+Add screenshots to a `screenshots/` folder and replace these placeholders when you are ready:
+
+```md
+![Landing Page](screenshots/landing-page.png)
+![Dashboard](screenshots/dashboard.png)
+![Applications Table](screenshots/applications-table.png)
+![Application Detail](screenshots/application-detail.png)
+```
 
 ## Demo Credentials
 
@@ -129,6 +146,15 @@ Services:
 - backend: `http://localhost:8080`
 - mysql: `localhost:3306`
 
+## Architecture
+
+ApplicationTracker is organized as a single repository with a React frontend and a Spring Boot backend.
+
+- frontend: React + Vite SPA with route guards, token-based auth flow, analytics views, and product-style UI
+- backend: Spring Boot REST API with feature-first modules for auth, applications, user/profile, and config
+- data: MySQL for local and containerized runs, with Flyway handling schema evolution
+- docs: Swagger/OpenAPI for inspectable API contracts
+
 ## Project Structure
 
 ### Backend
@@ -154,6 +180,13 @@ For GitHub, LinkedIn, or a portfolio site, these are the strongest screenshots:
 4. Applications table with filters
 5. Application detail timeline
 6. Swagger UI
+
+## Challenges Solved
+
+- Moved from ad hoc schema updates to Flyway migrations for predictable local setup
+- Fixed JWT/security flow issues so protected actions behave correctly across users
+- Cleaned test infrastructure to work on newer JDKs and reduced noisy H2 setup warnings
+- Refined the frontend from a plain scaffold into something that presents better in screenshots and demos
 
 ## Notes
 
