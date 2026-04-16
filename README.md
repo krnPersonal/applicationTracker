@@ -70,6 +70,14 @@ Local profile seeds a demo account automatically:
 
 ### Backend
 
+Create a local config from the example:
+
+```bash
+cp src/main/resources/application-local.example.properties src/main/resources/application-local.properties
+```
+
+Then update the local file with your own MySQL username, password, and JWT secret.
+
 Run the backend with the local profile:
 
 ```bash
