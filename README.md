@@ -1,25 +1,24 @@
 # ApplicationTracker
 
-ApplicationTracker is a full-stack portfolio project for tracking job applications with a polished product-style frontend and a production-oriented Spring Boot backend.
+ApplicationTracker is a full-stack portfolio project for managing job applications through a polished, product-style workflow. It combines a React frontend with a Spring Boot backend and focuses on the parts that make a portfolio project feel credible: authentication, analytics, file handling, route protection, migrations, API docs, and a cleaner UX than a basic CRUD app.
 
-It demonstrates:
+## What It Shows
 
-- JWT authentication and route protection
-- profile management and resume upload
-- analytics dashboard and follow-up insights
-- application list filtering, sorting, CSV export, and pagination
-- activity timeline on detail pages
-- Flyway migrations, Swagger docs, demo seed data, and Dockerized setup
+- JWT authentication with protected frontend and backend routes
+- profile management with resume upload/download
+- analytics dashboard with follow-up and pipeline insights
+- searchable application table with filters, sorting, CSV export, and pagination
+- application detail timeline with editable workflow data
+- Flyway migrations, Swagger docs, seeded demo data, and Docker support
 
-## Product Overview
+## Feature Walkthrough
 
-The app is structured like a real user workflow:
-
-1. Public landing page for portfolio presentation
-2. Animated login / sign-up experience
-3. Dashboard with response and follow-up metrics
-4. Application pipeline table with filters and export
-5. Detail view with editable record, resume actions, and timeline history
+1. Public landing page designed for portfolio presentation
+2. Animated login and sign-up flow
+3. Dashboard with response rate, offer rate, and follow-up visibility
+4. Applications table with search, filters, sort, export, and empty states
+5. Detail page with timeline, insights, resume actions, and editing flow
+6. Swagger UI for backend API inspection
 
 ## Tech Stack
 
@@ -39,36 +38,40 @@ The app is structured like a real user workflow:
 - React
 - Vite
 - React Router
-- Custom CSS design system
+- Custom CSS
 
-## Portfolio Highlights
+## Why This Is Portfolio-Worthy
 
-### UX / Product
+### Product / UX
 
-- Public-facing landing page for first impression
-- protected application routes
-- professional auth transitions
-- analytics-driven dashboard
-- responsive application list and workflow detail views
+- clearer visual design than a default scaffold
+- protected route flow and public marketing-style landing page
+- dashboard metrics that communicate next actions, not just raw counts
+- polished auth and detail experiences that feel closer to a real product
 
 ### Engineering
 
-- database migrations with Flyway
-- local demo data seeding
-- OpenAPI documentation
-- Docker support for backend + MySQL
-- environment-based configuration
+- feature-first backend package structure
+- database migrations instead of schema drift through auto-update
+- OpenAPI documentation for inspectable APIs
+- environment-specific configuration and local demo seeding
+- Dockerized backend and MySQL setup
+
+## Live Demo
+
+- App: add your deployed frontend URL here
+- API docs: add your deployed Swagger URL here
 
 ## Demo Credentials
 
-Local profile seeds a demo account automatically:
+The local profile seeds a demo account automatically:
 
 - email: `demo@applicationtracker.dev`
 - password: `password123`
 
-## Local Setup
+## Quick Start
 
-### Backend
+### 1. Backend config
 
 Create a local config from the example:
 
@@ -78,29 +81,33 @@ cp src/main/resources/application-local.example.properties src/main/resources/ap
 
 Then update the local file with your own MySQL username, password, and JWT secret.
 
-Run the backend with the local profile:
+### 2. Start the backend
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+./mvnw spring-boot:run
 ```
 
-Local profile behavior:
+The project defaults to the `local` profile, so it will use:
 
 - database: `applicationtracker`
-- database auto-created if missing
-- demo seed data enabled
-- uploads stored in `uploads/`
+- demo seed data: enabled
+- uploads directory: `uploads/`
 
-### Frontend
+### 3. Start the frontend
 
 ```bash
 cd frontend
+npm install
 npm run dev
 ```
 
-Frontend default URL:
+Frontend URL:
 
 - `http://localhost:5173`
+
+Backend URL:
+
+- `http://localhost:8080`
 
 ## API Docs
 
@@ -133,16 +140,16 @@ Services:
 
 ### Frontend
 
-- `frontend/src/pages` - app screens
-- `frontend/src/components` - route guards, navbar, toasts
+- `frontend/src/pages` - landing page, auth, dashboard, applications, detail, profile, playground
+- `frontend/src/components` - navbar, route guards, toasts, shared UI pieces
 - `frontend/src/Api` - API client and token handling
 
-## Suggested Portfolio Screenshots
+## Recommended Screenshots
 
-If you want to present this in GitHub or LinkedIn, the strongest screenshots are:
+For GitHub, LinkedIn, or a portfolio site, these are the strongest screenshots:
 
-1. Public landing page
-2. Animated auth screen
+1. Landing page
+2. Login / sign-up flow
 3. Dashboard analytics
 4. Applications table with filters
 5. Application detail timeline
@@ -153,4 +160,4 @@ If you want to present this in GitHub or LinkedIn, the strongest screenshots are
 - Flyway migrations live in `src/main/resources/db/migration`
 - production config is driven by environment variables in `application-prod.properties`
 - test profile uses H2 and keeps Flyway disabled
-- backend compile verified with `./mvnw -DskipTests compile`
+- verified with `./mvnw test`
