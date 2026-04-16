@@ -126,6 +126,19 @@ Backend URL:
 
 - `http://localhost:8080`
 
+## Test Coverage
+
+Generate a JaCoCo coverage report with:
+
+```bash
+./mvnw -Pcoverage test
+```
+
+Coverage output:
+
+- HTML report: `target/site/jacoco/index.html`
+- XML report: `target/site/jacoco/jacoco.xml`
+
 ## API Docs
 
 After the backend starts:
