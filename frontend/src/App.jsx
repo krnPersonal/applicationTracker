@@ -11,7 +11,8 @@ import ApplicationsList from "./pages/ApplicationsList.jsx";
 import ApplicationForm from "./pages/ApplicationForm.jsx";
 import ApplicationDetail from "./pages/ApplicationDetail.jsx";
 import Profile from "./pages/Profile.jsx";
-import Playground from "./pages/Playground.jsx";
+import Market from "./pages/Market.jsx";
+import Salary from "./pages/Salary.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { ToastProvider } from "./components/ToastProvider.jsx";
 
@@ -29,8 +30,9 @@ export default function App() {
         else if (path === "/applications") pageTitle = "Applications | ApplicationTracker";
         else if (path === "/applications/new") pageTitle = "New Application | ApplicationTracker";
         else if (/^\/applications\/[^/]+$/.test(path)) pageTitle = "Application Details | ApplicationTracker";
+        else if (path === "/market") pageTitle = "Market | ApplicationTracker";
+        else if (path === "/salary") pageTitle = "Salary | ApplicationTracker";
         else if (path === "/profile") pageTitle = "Profile | ApplicationTracker";
-        else if (path === "/playground") pageTitle = "Playground | ApplicationTracker";
 
         document.title = pageTitle;
     }, [location.pathname]);
@@ -73,10 +75,15 @@ export default function App() {
                         <ProtectedRoute>
                             <Profile/>
                         </ProtectedRoute>}/>
-                    <Route path="/playground" element={
+                    <Route path="/market" element={
                         <ProtectedRoute>
-                            <Playground/>
+                            <Market/>
                         </ProtectedRoute>}/>
+                    <Route path="/salary" element={
+                        <ProtectedRoute>
+                            <Salary/>
+                        </ProtectedRoute>}/>
+                    <Route path="/playground" element={<Navigate to="/market" replace/>}/>
                     <Route path="*" element={<Navigate to="/" replace/>}/>
                 </Routes>
             </main>

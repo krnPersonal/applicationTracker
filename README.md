@@ -98,6 +98,11 @@ cp src/main/resources/application-local.example.properties src/main/resources/ap
 
 Then update the local file with your own MySQL username, password, and JWT secret.
 
+If you want the `Market` page to use live USAJOBS data instead of the built-in fallback snapshot, also add:
+
+- `app.usajobs.user-agent`
+- `app.usajobs.api-key`
+
 ### 2. Start the backend
 
 ```bash
@@ -179,7 +184,7 @@ ApplicationTracker is organized as a single repository with a React frontend and
 
 ### Frontend
 
-- `frontend/src/pages` - landing page, auth, dashboard, applications, detail, profile, playground
+- `frontend/src/pages` - landing page, auth, dashboard, applications, detail, profile, market
 - `frontend/src/components` - navbar, route guards, toasts, shared UI pieces
 - `frontend/src/Api` - API client and token handling
 

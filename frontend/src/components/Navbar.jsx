@@ -114,10 +114,16 @@ export default function Navbar() {
                                 Applications
                             </NavLink>
                             <NavLink
-                                to="/playground"
+                                to="/market"
                                 className={({ isActive }) => `nav-link${isActive ? " nav-link--active" : ""}`}
                             >
-                                Playground
+                                Market
+                            </NavLink>
+                            <NavLink
+                                to="/salary"
+                                className={({ isActive }) => `nav-link${isActive ? " nav-link--active" : ""}`}
+                            >
+                                Salary
                             </NavLink>
                             <NavLink
                                 to="/profile"
