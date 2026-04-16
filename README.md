@@ -77,7 +77,7 @@ ApplicationTracker is a full-stack portfolio project for managing job applicatio
 <img width="1490" height="1288" alt="image" src="https://github.com/user-attachments/assets/d5ab6c4a-fa11-43e2-8db1-1029ef4ac495" />
 <img width="1333" height="1288" alt="image" src="https://github.com/user-attachments/assets/d7317220-7aa1-41dd-ac87-8233abe18c8b" />
 <img width="1342" height="1290" alt="image" src="https://github.com/user-attachments/assets/dc9f6d56-b1ba-4e65-b040-a738a6a8631d" />
-
+<img width="1859" height="1291" alt="image" src="https://github.com/user-attachments/assets/23f5d58c-9ba8-402d-8736-06ba9910f626" />
 
 
 ## Demo Credentials
@@ -189,16 +189,7 @@ ApplicationTracker is organized as a single repository with a React frontend and
 - `frontend/src/components` - navbar, route guards, toasts, shared UI pieces
 - `frontend/src/Api` - API client and token handling
 
-## Recommended Screenshots
 
-For GitHub, LinkedIn, or a portfolio site, these are the strongest screenshots:
-
-1. Landing page
-2. Login / sign-up flow
-3. Dashboard analytics
-4. Applications table with filters
-5. Application detail timeline
-6. Swagger UI
 
 ## Challenges Solved
 
